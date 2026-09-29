@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB Voyages · Omra</title>
+  <meta name="description" content="MB Voyages, agence Omra basée à Marseille. Vols, hôtels à La Mecque et Médine, transport et visa inclus. Départs depuis la Côte d'Azur." />
+</head>
+<body>
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="MB Voyages, accueil">
+        <span class="brand__mark">MB</span>
+        <span class="brand__name">Voyages</span>
+      </a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#offre">L'offre</a>
+        <a href="#programme">Programme</a>
+        <a href="#hotels">Hôtels</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#reservation" class="btn btn--primary btn--sm">Réserver</a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <h1>Voyager, découvrir,<br /><em>se rapprocher.</em></h1>
+          <p class="lead">
+            MB Voyages organise votre Omra de A à Z :
+            vols, hôtels à La Mecque et à Médine, transport sur place et visa.
+            Vous n'avez qu'à vous consacrer à l'essentiel.
+          </p>
+          <div class="hero__cta">
+            <a href="#reservation" class="btn btn--primary">Réserver ma place</a>
+            <a href="#programme" class="btn btn--ghost">Voir le programme</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>9 jours</strong><span>Départs réguliers</span></li>
+            <li><strong>Visa</strong><span>inclus</span></li>
+            <li><strong>Bagage</strong><span>en soute inclus</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <figure class="arch arch--tall">
+            <img src="https://images.unsplash.com/photo-1720549973451-018d3623b55a?auto=format&fit=crop&w=700&q=80" alt="" onerror="this.onerror=null;this.src='./img/makkah.jpg'" />
+          </figure>
+          <figure class="arch arch--short">
+            <img src="https://images.unsplash.com/photo-1765892272462-bad4a8ba0fb9?auto=format&fit=crop&w=600&q=80" alt="" onerror="this.onerror=null;this.src='./img/madinah.jpg'" />
+          </figure>
+          <div class="float-card">
+            <span class="float-card__icon">✈</span>
+            <div>
+              <strong>Vols inclus</strong>
+              <small>Des compagnies sûres</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU CONFIANCE ============ -->
+    <section class="strip">
+      <div class="container strip__inner">
+        <div><span class="strip__num">Départ</span><span>Côte d'Azur</span></div>
+        <div><span class="strip__num">4★</span><span>Hôtels proches du Haram</span></div>
+        <div><span class="strip__num">A→Z</span><span>Vols, hôtels, bus, visa</span></div>
+        <div><span class="strip__num">Langue</span><span>Accompagnement en français</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Nos services</p>
+          <h2>Une agence moderne pour les voyages qui comptent</h2>
+          <p class="section__sub">
+            Notre priorité : offrir à chacun l'Omra qu'il mérite.
+          </p>
+        </header>
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 2c1.5 2.5 4 3.5 4 6v2H8V8c0-2.5 2.5-3.5 4-6Z"/><path d="M4 22V12h16v10M9 22v-5a3 3 0 0 1 6 0v5"/></svg></div>
+            <h3>Omra</h3>
+            <p>Des départs groupés à dates fixes, pensés pour allier sérénité et budget maîtrisé.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 8 12 4l8 4v12H4Z"/><path d="M4 11h16"/></svg></div>
+            <h3>Hajj</h3>
+            <p>Un accompagnement pour préparer le pèlerinage d'une vie, étape par étape.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M2 16l20-8-3 9-6-2-3 5-1-6Z"/></svg></div>
+            <h3>Billets d'avion</h3>
+            <p>On trouve le meilleur créneau, bagage en soute compris.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M5 22V3h14v19M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 22v-3h4v3"/></svg></div>
+            <h3>Hôtels</h3>
+            <p>Une sélection d'hôtels confortables, bien notés et proches des lieux saints.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+            <h3>Voyages sur mesure</h3>
+            <p>Vos dates, votre groupe, votre budget : nous construisons le séjour qui vous ressemble.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M3 17h18M5 17V9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M7 17v2M17 17v2M5 12h14"/></svg></div>
+            <h3>Transport sur place</h3>
+            <p>Bus ou minicar privé pour tous vos trajets entre Djeddah, La Mecque et Médine.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFRE ============ -->
+    <section class="section section--tint" id="offre">
+      <div class="container offer">
+        <div class="offer__text reveal">
+          <p class="eyebrow">Nos départs</p>
+          <h2>Omra tout compris</h2>
+          <p class="section__sub">
+            Des dates toute l'année, choisies selon les tarifs aériens et hôteliers du moment.
+            Organisation complète pour que chaque pèlerin voyage l'esprit libre.
+          </p>
+          <ul class="checklist">
+            <li><strong>Vols aller-retour</strong> France ⇄ Djeddah, avec ou sans escale</li>
+            <li><strong>Bagages</strong> petit bagage, bagage cabine et bagage en soute inclus</li>
+            <li><strong>Hôtels</strong> à La Mecque et à Médine, chambres avec salle de bain privative</li>
+            <li><strong>Transport</strong> en bus ou minicar pour tout le groupe sur place</li>
+            <li><strong>Visa Omra</strong> démarches Nusuk et assurance santé obligatoire</li>
+          </ul>
+        </div>
+        <aside class="price-card reveal">
+          <p class="price-card__label">Formule tout compris</p>
+          <p class="price-card__price" data-price>Tarif sur demande</p>
+          <p class="price-card__note">par personne · places limitées</p>
+          <div class="price-card__route">
+            <div><small>Durée · 9 jours</small><strong>La Mecque + Médine</strong></div>
+            <div><small>Vols · aller-retour</small><strong>Côte d'Azur</strong></div>
+          </div>
+          <a href="#reservation" class="btn btn--primary btn--block">Réserver ma place</a>
+          <p class="price-card__foot">Aucun paiement en ligne : un conseiller vous recontacte pour confirmer.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMME ============ -->
+    <section class="section" id="programme">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Le programme</p>
+          <h2>Neuf jours, pas à pas</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="timeline__day">Jour 1</span>
+            <h3>Départ de France</h3>
+            <p>Rendez-vous à l'aéroport, vol vers Djeddah, arrivée dans la nuit.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__day">Jours 2 à 4</span>
+            <h3>La Mecque</h3>
+            <p>Transfert en bus, installation à l'hôtel et accomplissement de l'Omra dans le calme.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__day">Jours 5 à 8</span>
+            <h3>Médine</h3>
+            <p>Route vers Médine, séjour à proximité de la Mosquée du Prophète et visites.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__day">Jour 9</span>
+            <h3>Retour en France</h3>
+            <p>Transfert vers l'aéroport de Djeddah et arrivée en France en fin d'après-midi.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU PHOTO ============ -->
+    <section class="photo-band">
+      <div class="container">
+        <figure class="photo-band__frame reveal">
+          <img src="https://images.unsplash.com/photo-1591004272853-1462c050dca8?auto=format&fit=crop&w=1600&q=80" alt="Pèlerins autour de la Kaaba à La Mecque" loading="lazy" onerror="this.remove()" />
+          <figcaption>
+            <p class="eyebrow">Notre promesse</p>
+            <p class="photo-band__quote">Une Omra sereine, du départ jusqu'au retour à la maison.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ HOTELS ============ -->
+    <section class="section section--tint" id="hotels">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Hébergement</p>
+          <h2>Le confort avant tout</h2>
+          <p class="section__sub">
+            Nous privilégions des hôtels bien notés par les voyageurs, pour que vous
+            puissiez vous reposer entre deux prières. Exemples d'établissements sélectionnés :
+          </p>
+        </header>
+        <div class="hotels">
+          <article class="hotel reveal">
+            <img class="hotel__img" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" onerror="this.remove()" />
+            <span class="hotel__city">La Mecque</span>
+            <h3>Novotel Makkah Thakher City</h3>
+            <p class="hotel__stars">★★★★</p>
+            <p class="hotel__score"><b>8,1</b> Très bien</p>
+          </article>
+          <article class="hotel reveal">
+            <img class="hotel__img" src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" onerror="this.remove()" />
+            <span class="hotel__city">La Mecque</span>
+            <h3>Courtyard by Marriott Makkah</h3>
+            <p class="hotel__stars">★★★★</p>
+            <p class="hotel__score"><b>8,5</b> Très bien</p>
+          </article>
+          <article class="hotel reveal">
+            <img class="hotel__img" src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" onerror="this.remove()" />
+            <span class="hotel__city">La Mecque</span>
+            <h3>Radisson Hotel Makkah Thakher City</h3>
+            <p class="hotel__stars">★★★★</p>
+            <p class="hotel__score"><b>9,3</b> Fabuleux</p>
+          </article>
+          <article class="hotel reveal">
+            <img class="hotel__img" src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy" onerror="this.remove()" />
+            <span class="hotel__city">Médine</span>
+            <h3>Tamkeen Hotel</h3>
+            <p class="hotel__stars">★★★</p>
+            <p class="hotel__score"><b>8,1</b> Très bien</p>
+          </article>
+        </div>
+        <p class="fine reveal">Notes indicatives relevées sur Booking.com. Hôtel définitif confirmé selon disponibilités.</p>
+      </div>
+    </section>
+
+    <!-- ============ ZONES ============ -->
+    <section class="section">
+      <div class="container zones reveal">
+        <div>
+          <p class="eyebrow">Proche de chez vous</p>
+          <h2>Proche de chez vous, sur la Côte d'Azur</h2>
+          <p class="section__sub">Nos départs partent de la Côte d'Azur, facile d'accès pour Nice et les villes alentour.</p>
+        </div>
+        <ul class="zones__list">
+          <li>Nice</li>
+          <li>Cannes</li>
+          <li>Antibes</li>
+          <li>Monaco · Menton</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESERVATION ============ -->
+    <section class="section section--booking" id="reservation">
+      <div class="container booking">
+        <div class="booking__intro reveal">
+          <p class="eyebrow">Réservation</p>
+          <h2>Réservez votre place en 2 minutes</h2>
+          <p class="section__sub">
+            Remplissez le formulaire : votre demande nous est envoyée directement
+            par WhatsApp ou par e-mail. Un conseiller vous rappelle pour confirmer
+            les détails et le règlement.
+          </p>
+          <ol class="steps">
+            <li><b>1</b> Vous envoyez votre demande</li>
+            <li><b>2</b> Nous vous rappelons sous 24 h</li>
+            <li><b>3</b> Nous préparons votre visa et votre voyage</li>
+          </ol>
+        </div>
+
+        <form class="form reveal" id="booking-form" novalidate>
+          <div class="form__grid">
+            <label class="field">
+              <span>Prénom *</span>
+              <input name="prenom" autocomplete="given-name" required />
+              <em class="field__err"></em>
+            </label>
+            <label class="field">
+              <span>Nom *</span>
+              <input name="nom" autocomplete="family-name" required />
+              <em class="field__err"></em>
+            </label>
+            <label class="field">
+              <span>Téléphone *</span>
+              <input name="telephone" type="tel" autocomplete="tel" placeholder="06 12 34 56 78" required />
+              <em class="field__err"></em>
+            </label>
+            <label class="field">
+              <span>E-mail</span>
+              <input name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" />
+              <em class="field__err"></em>
+            </label>
+            <label class="field field--full">
+              <span>Départ souhaité *</span>
+              <select name="depart" required>
+                <option value="Prochain départ disponible">Prochain départ disponible</option>
+                <option value="Une date précise (à préciser dans le message)">Une date précise (à préciser dans le message)</option>
+                <option value="Voyage sur mesure">Voyage sur mesure</option>
+              </select>
+              <em class="field__err"></em>
+            </label>
+            <label class="field">
+              <span>Adultes *</span>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="Moins">−</button>
+                <input name="adultes" type="number" min="1" max="30" value="1" required />
+                <button type="button" data-step="1" aria-label="Plus">+</button>
+              </div>
+              <em class="field__err"></em>
+            </label>
+            <label class="field">
+              <span>Enfants</span>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="Moins">−</button>
+                <input name="enfants" type="number" min="0" max="20" value="0" />
+                <button type="button" data-step="1" aria-label="Plus">+</button>
+              </div>
+              <em class="field__err"></em>
+            </label>
+            <fieldset class="field field--full">
+              <legend>Type de chambre</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="chambre" value="Double" /><span>Double</span></label>
+                <label class="chip"><input type="radio" name="chambre" value="Triple" checked /><span>Triple</span></label>
+                <label class="chip"><input type="radio" name="chambre" value="Quadruple" /><span>Quadruple</span></label>
+              </div>
+            </fieldset>
+            <label class="field field--full">
+              <span>Ville</span>
+              <select name="ville">
+                <option>Nice</option>
+                <option>Cannes</option>
+                <option>Antibes</option>
+                <option>Monaco / Menton</option>
+                <option>Autre</option>
+              </select>
+            </label>
+            <label class="field field--full">
+              <span>Message</span>
+              <textarea name="message" rows="3" placeholder="Une question, un besoin particulier (personne âgée, fauteuil roulant…)"></textarea>
+            </label>
+            <label class="consent field--full">
+              <input type="checkbox" name="consent" required />
+              <span>J'accepte d'être recontacté(e) par MB Voyages au sujet de ma demande. *</span>
+            </label>
+            <em class="field__err field--full" data-err="consent"></em>
+          </div>
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary btn--block" data-channel="whatsapp">
+              Envoyer par WhatsApp
+            </button>
+            <button type="submit" class="btn btn--ghost btn--block" data-channel="email">
+              Envoyer par e-mail
+            </button>
+          </div>
+          <p class="form__ok" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2>Tout ce qu'il faut savoir</h2>
+        </header>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Le visa Omra est-il compris ?</summary>
+            <p>Oui. Nous nous occupons de la demande via la plateforme officielle Nusuk, assurance santé obligatoire comprise. Vous nous transmettez simplement votre passeport et une photo.</p>
+          </details>
+          <details class="reveal">
+            <summary>Quels bagages puis-je emporter ?</summary>
+            <p>Chaque pèlerin a droit à un bagage cabine et à un bagage en soute. Le détail dépend de la compagnie, nous vous le confirmons à la réservation.</p>
+          </details>
+          <details class="reveal">
+            <summary>Comment se passe le paiement ?</summary>
+            <p>Aucun paiement n'est demandé en ligne. Après votre demande, un conseiller vous appelle pour confirmer votre place et vous expliquer les modalités de règlement.</p>
+          </details>
+          <details class="reveal">
+            <summary>Proposez-vous d'autres dates ?</summary>
+            <p>Oui. Les dates suivent les tarifs aériens et hôteliers. Indiquez « Une date précise » ou « Voyage sur mesure » dans le formulaire, on vous propose ce qui colle.</p>
+          </details>
+          <details class="reveal">
+            <summary>Je voyage avec une personne âgée, est-ce possible ?</summary>
+            <p>Bien sûr. Précisez-le dans votre message : nous adaptons l'hôtel, la chambre et l'accompagnement.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#top" class="brand brand--light">
+          <span class="brand__mark">MB</span>
+          <span class="brand__name">Voyages</span>
+        </a>
+        <p>Voyager · Découvrir · Se rapprocher</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Agence</h4>
+          <p>Marseille, France</p>
+          <p>Départs Côte d'Azur</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a data-contact="phone" href="#">Téléphone</a></p>
+          <p><a data-contact="email" href="#">E-mail</a></p>
+        </div>
+      </div>
+    </div>
+    <p class="footer__copy container">© <span data-year></span> MB Voyages. Tous droits réservés.</p>
+  </footer>
+
+  <a class="wa-float" data-contact="whatsapp" href="#" aria-label="Nous écrire sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.3Z"/></svg>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
