@@ -318,6 +318,38 @@ p { margin: 0; }
   background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
 }
 .field textarea { resize: vertical; }
+
+/* Menu déroulant personnalisé */
+.select { position: relative; }
+.select__trigger {
+  width: 100%; text-align: left; cursor: pointer;
+  font: 500 0.95rem var(--sans); color: var(--navy);
+  padding: 13px 36px 13px 14px; border-radius: var(--radius-sm);
+  border: 1px solid var(--line); background: var(--snow);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%233470bb' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.select__trigger:focus, .select.is-open .select__trigger {
+  outline: none; border-color: var(--blue-500); background-color: var(--white);
+  box-shadow: 0 0 0 4px rgba(74, 134, 207, .15);
+}
+.select__list {
+  position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 6px);
+  margin: 0; padding: 6px; list-style: none; max-height: 260px; overflow: auto;
+  background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius-sm); box-shadow: var(--shadow);
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity .15s ease, transform .15s ease, visibility .15s;
+}
+.select.is-open .select__list { opacity: 1; visibility: visible; transform: none; }
+.select__option {
+  padding: 10px 12px; border-radius: 8px; cursor: pointer;
+  font-size: 0.93rem; font-weight: 500; color: var(--ink);
+}
+.select__option.is-active, .select__option:hover { background: var(--mist); }
+.select__option.is-selected { color: var(--blue-700); font-weight: 700; }
+.select__option.is-selected::after { content: "✓"; float: right; color: var(--blue-600); }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none; border-color: var(--blue-500); background: var(--white);
   box-shadow: 0 0 0 4px rgba(74, 134, 207, .15);

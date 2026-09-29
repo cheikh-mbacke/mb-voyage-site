@@ -182,3 +182,86 @@ form.addEventListener('submit', (e) => {
     ' : un conseiller vous recontacte rapidement.';
   okBox.hidden = false;
 });
+
+// ---- Menus déroulants personnalisés (remplacent le rendu natif du navigateur) ----
+$$('.field select').forEach((select) => {
+  const wrap = document.createElement('div');
+  wrap.className = 'select';
+  const trigger = document.createElement('button');
+  trigger.type = 'button';
+  trigger.className = 'select__trigger';
+  trigger.setAttribute('aria-haspopup', 'listbox');
+  trigger.setAttribute('aria-expanded', 'false');
+  const list = document.createElement('ul');
+  list.className = 'select__list';
+  list.setAttribute('role', 'listbox');
+  list.tabIndex = -1;
+
+  const items = [...select.options].map((opt) => {
+    const li = document.createElement('li');
+    li.className = 'select__option';
+    li.setAttribute('role', 'option');
+    li.dataset.value = opt.value;
+    li.textContent = opt.textContent;
+    list.append(li);
+    return li;
+  });
+
+  let active = 0;
+  const highlight = (i) => {
+    active = (i + items.length) % items.length;
+    items.forEach((li, n) => li.classList.toggle('is-active', n === active));
+    items[active].scrollIntoView({ block: 'nearest' });
+  };
+  const sync = () => {
+    trigger.textContent = select.options[select.selectedIndex].textContent;
+    items.forEach((li, n) => {
+      const on = n === select.selectedIndex;
+      li.classList.toggle('is-selected', on);
+      li.setAttribute('aria-selected', String(on));
+    });
+  };
+  const open = () => {
+    wrap.classList.add('is-open');
+    trigger.setAttribute('aria-expanded', 'true');
+    highlight(select.selectedIndex);
+  };
+  const close = () => {
+    wrap.classList.remove('is-open');
+    trigger.setAttribute('aria-expanded', 'false');
+  };
+  const choose = (i) => {
+    select.selectedIndex = i;
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    sync();
+    close();
+    trigger.focus();
+  };
+
+  trigger.addEventListener('click', () => (wrap.classList.contains('is-open') ? close() : open()));
+  list.addEventListener('click', (e) => {
+    const i = items.indexOf(e.target.closest('.select__option'));
+    if (i >= 0) choose(i);
+  });
+  trigger.addEventListener('keydown', (e) => {
+    const isOpen = wrap.classList.contains('is-open');
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (!isOpen) open();
+      else highlight(active + (e.key === 'ArrowDown' ? 1 : -1));
+    } else if ((e.key === 'Enter' || e.key === ' ') && isOpen) {
+      e.preventDefault();
+      choose(active);
+    } else if (e.key === 'Escape' || e.key === 'Tab') {
+      close();
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (!wrap.contains(e.target)) close();
+  });
+
+  select.hidden = true;
+  select.after(wrap);
+  wrap.append(trigger, list);
+  sync();
+});
