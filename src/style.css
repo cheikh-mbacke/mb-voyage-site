@@ -275,6 +275,11 @@ p { margin: 0; }
 .fine { font-size: 0.8rem; color: var(--muted); margin-top: 22px; }
 
 /* ---------- Zones ---------- */
+.section--zones {
+  background:
+    linear-gradient(180deg, rgba(247, 250, 253, 0.55), rgba(238, 245, 252, 0.62)),
+    url("/img/nice.jpg") center / cover no-repeat;
+}
 .zones {
   display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center;
   padding: 56px; border-radius: 32px;

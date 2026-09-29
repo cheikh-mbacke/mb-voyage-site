@@ -17,7 +17,7 @@ import './style.css';
 // Coordonnées de l'agence : remplacez par les vraies valeurs.
 const CONFIG = {
   whatsapp: '33661785097',            // numéro au format international, sans + ni espaces
-  email: 'contact@mb-voyages.fr',
+  email: 'contact@mb-voyages.com',
   phoneDisplay: '+33 6 61 78 50 97',
   price: null,                        // ex. 1590 pour afficher « 1 590 € » ; null = « Tarif sur demande »
 };
